@@ -1,0 +1,22 @@
+@import "./fonts";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #111111;
+  --black_light: #575757;
+  --orange: #ff9514;
+  --white: #fff;
+  --gray: #ebebec;
+  --gray_light: #f3f3f4;
+}
+
+body {
+  font-family: "Nekst", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+}
