@@ -10,25 +10,26 @@ block body
                             input#cost.calculator-input(type="text",name="cost")
                             span.calculator-text ₽
                             input#cost-range.calculator-range(type="range", name="cost-range",min="1500000", max="10000000",step="1",value="3300000")
-                        .calculator-total
-                            h3.calculator-title Сумма договора лизинга
-                                .calculator-number 4 467 313 ₽
                     .calculator-item
                         h3.calculator-title Первоначальный взнос
                         .calculator-input-wrapper
                             input#contribution.calculator-input(type="text",name="contribution")
                             span.calculator-text.calculator-percentages 13%
                             input#contribution-range.calculator-range(type="range", name="contribution-range",min="10", max="60",step="1", value="420000 ")
-                        .calculator-total
-                            h3.calculator-title Ежемесячный платеж от
-                                .calculator-number 114 455 ₽
                     .calculator-item
                         h3.calculator-title Срок лизинга
                         .calculator-input-wrapper
                             input#term.calculator-input(type="text",name="term")
                             span.calculator-text мес.
                             input#term-range.calculator-range(type="range", name="term-range",min="6", max="120",step="1", value="60")
-                        .calculator-total
+                .calculator-content.calculator-bottom  
+                    .calculator-total
+                            h3.calculator-title Сумма договора лизинга
+                            .calculator-number 4 467 313 ₽
+                    .calculator-total
+                            h3.calculator-title Ежемесячный платеж от
+                            .calculator-number 114 455 ₽
+                    .calculator-total
                             button.calculator-btn Оставить заявку
-            
+                
 
