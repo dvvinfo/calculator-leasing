@@ -301,9 +301,14 @@ body {
   }
   .calculator-btn {
     padding: 14px 16px;
-    max-width: 280px;
-    width: 100%;
+    width: 280px;
     font-size: 22px;
     line-height: 20px;
+  }
+}
+@media screen and (max-width: 319px) {
+  .calculator-btn {
+    width: 230px;
+    font-size: 20px;
   }
 }
