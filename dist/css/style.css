@@ -131,14 +131,12 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: none;
 }
 .calculator-range::-webkit-slider-runnable-track {
   height: 2px;
   background-color: var(--orange);
 }
 .calculator-range::-webkit-slider-thumb {
-  box-shadow: 5px 0 0 -8px #c7c7c7;
   background-color: var(--orange);
   width: 20px;
   height: 20px;
@@ -177,7 +175,7 @@ body {
   border-radius: 40px;
   background-color: var(--orange);
   font-weight: 900;
-  margin-top: 18px;
+  margin-top: 26px;
   font-size: 30px;
   line-height: 36px;
   color: var(--white);
@@ -191,12 +189,63 @@ body {
   background-color: var(--black_light);
 }
 
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 21px;
+  height: 21px;
+  display: none;
+}
+
+.loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  margin: 2px;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.loader div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .calculator-number {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .calculator-number {
+    font-size: 35px;
+  }
+  .calculator-btn {
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 1025px) {
   .calculator-btn {
     font-size: 20px;
-  }
-  .calculator-number {
-    font-size: 40px;
   }
   .main {
     height: auto;
@@ -204,10 +253,16 @@ body {
   .wrapper {
     padding: 64px 36px;
   }
+  .calculator-input {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 768px) {
   .calculator-content {
     display: block;
+  }
+  .calculator-input {
+    font-size: 30px;
   }
   .calculator-bottom {
     display: flex;
